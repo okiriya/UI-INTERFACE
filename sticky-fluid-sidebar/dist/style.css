@@ -1,0 +1,47 @@
+body {
+  background-color: #DEE1E8;
+}
+
+.container {
+  font-family: "Open Sans", sans-serif;
+  height: 2000px;
+}
+.container header h2 {
+  font-size: 30px;
+  line-height: 3.5;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container nav.scroll {
+  position: fixed;
+  top: 30px;
+}
+.container .column-left {
+  padding-top: 30px;
+}
+.container .column-left ul li {
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 2.5;
+  border-radius: 5px;
+  color: #3e4357;
+  cursor: pointer;
+}
+.container .column-left ul li:hover {
+  opacity: 0.5;
+  background-color: #e6eaf2;
+}
+.container .column-right {
+  padding-top: 30px;
+}
+.container .column-right p {
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.container .nav-anchor {
+  display: block;
+  width: 1px;
+  height: 0;
+}

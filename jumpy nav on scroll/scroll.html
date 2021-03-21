@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#container {
+  margin-top:10px;
+}
+
+nav {
+  background-color:#FBFBFB;
+  color:white;
+}
+.interior {
+	width: 100%;
+	max-width: 965px;
+	margin: 0 auto;
+	padding:15px 10px 10px 10px;
+	height: 80px;
+
+}
+.menu {
+	float: right;
+	background-color: red;
+}
+.menu ul {
+	margin: 0;
+}
+.menu ul li {
+	float: right;
+	list-style: none;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: Helvetica,Arial,Sans serif !important;
+	margin-right: 40px;
+}
+.header {
+  max-width: 100%;
+  margin: 0 auto;
+}
+nav.fixed {
+  position:fixed;
+  top:0px;
+  right:0px;
+  left:0px;
+  z-index:999;
+}
+
+a {
+text-decoration: none;
+}
+ul, li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#nav {
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+margin: 0 auto;
+float: right;
+}
+#nav > a {
+display: none;
+}
+#nav li {
+position: relative;
+}
+#nav li a {
+color: #65676A;
+display: block;
+}
+#nav li a:active {
+background-color: #c00 !important;
+}
+#nav span:after {
+width: 0;
+height: 0;
+border: 0.313em solid transparent; /* 5 */
+border-bottom: none;
+border-top-color: #efa585;
+content: '';
+vertical-align: middle;
+display: inline-block;
+position: relative;
+right: -0.313em; /* 5 */
+}
+/* first level */
+
+#nav > ul {
+height: 1.75em; /* 60 */
+margin-top: 13px;
+}
+#nav > ul > li {
+float: left;
+margin-right: 20px;
+}
+#nav > ul > li > a {
+height: 100%;
+font-size: 1.5em; /* 24 */
+line-height: 2.5em; /* 60 (24) */
+text-align: center;
+font-size: 12px;
+text-transform: uppercase;
+padding: 0 10px;
+}
+#nav > ul > li:hover > a, #nav > ul:not( :hover ) > li.active > a {
+background-color: #387386;
+border-radius: 5px;
+color: #FFF;
+}
+/* second level */
+
+#nav li ul {
+background-color: #cc470d;
+display: none;
+position: absolute;
+top: 100%;
+}
+#nav li:hover ul {
+display: block;
+left: 0;
+right: 0;
+}
+#nav li:not( :first-child ):hover ul {
+left: -1px;
+}
+#nav li ul a {
+font-size: 1.25em; /* 20 */
+border-top: 1px solid #e15a1f;
+padding: 0.75em; /* 15 (20) */
+}
+#nav li ul li a:hover, #nav li ul:not( :hover ) li.active a {
+background-color: #e15a1f;
+}
+.header_med {
+	background-color: #397387;
+	width: 100%;
+	height: 500px;
+	background-attachment: fixed;
+	background-image: url(../img/anubis_med_header.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+    background-size: 100% auto;
+	float: left;
+}
+.centrado {
+	max-width: 965px;
+	margin: 2% auto 0 auto;
+	clear: both;
+}
+.centrado_interior {
+	max-width: 965px;
+	margin: 2% auto 0 auto;
+	clear: both;
+	padding-left: 70px;
+}
+.centrado h1 {
+	color: #FFF;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-top: 5px;
+	margin-bottom: 4px;
+}
+.centrado h2 {
+	color: #FFF;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-top: 5px;
+
+}
+.centrado p {
+	color: #FFF;
+	text-align: center;
+	font-size: 15px;
+	max-width: 400px;
+	margin: 0 auto;
+	line-height: 25px;
+}
+.icono {
+	background-image: url(../img/icon.png);
+	margin: 0 auto;
+	width: 44px;
+	height: 78px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.icono_contenido {
+	background-image: url(../img/icono_contenido.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin: 50px auto 0 auto;
+	width: 179px;
+	height: 216px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	float: left;
+	text-align: center;
+	padding-top: 95px;
+}
+.icono_contenido_doble_linea {
+	background-image: url(../img/icono_contenido.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin: 50px auto 0 auto;
+	width: 179px;
+	height: 216px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	float: left;
+	text-align: center;
+	padding-top: 83px;
+}
+.icono_contenido, .icono_contenido_doble_linea .texto_icon {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 300;
+	color: #FFF;
+}
+.contenido_interior {
+	margin: 145px 0 0 50px;
+	width: 400px;
+	float: left;
+	text-align: left;
+	color: #65676A;
+	font-weight: 300;
+	font-size: 17px;
+}
+.separ {
+	border-bottom: 1px dashed #CCC;
+	width: 100%;
+	position: relative;
+	left: 225px;
+	top: 460px;
+}
+.contenido_interior ul {
+	margin-top: 40px;
+}
+.contenido_interior ul li{
+	margin-left: 40px;
+	line-height: 35px;
+	list-style-image: url(../img/anubis_med_list.png);
+}
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <header>
+            <nav class="header">
+                <div class="interior">
+                    <div id="nav" role="navigation">
+                        <a href="#nav" title="Show navigation">Show navigation</a> <a href="#" title="Hide navigation">Hide
+                            navigation</a>
+                        <ul class="clearfix">
+                            <li><a href="#">A</a></li>
+                            <li><a href="#">B</a></li>
+                            <li><a href="#">C</a></li>
+                            <li><a href="#">D</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="header_med">
+                <div class="centrado">
+                    <div class="icono"></div>
+                    <h1>LOREM</h1>
+                    <h2>IPSUM</h2>
+                    <p>Some text.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="centrado_interior">
+                <div class="contenido_interior">Quisque consequat sodales fringilla. Suspendisse sollicitudin vitae urna
+                    quis sagittis. Vestibulum vel nisi pretium, sagittis dui eu, elementum eros. Sed convallis rhoncus ante,
+                    eget egestas orci mollis eu. Sed ornare adipiscing velit, et ornare nibh. Aenean ultrices tempor nulla,
+                    id interdum libero elementum quis. Nunc euismod, elit non congue blandit, urna massa tempor metus, in
+                    ultrices risus ipsum a est. Sed dictum non lectus sed t</div>
+                <div class="separ"></div>
+            </div>
+        </section>
+    </section>
+    <script src="../assests/js/jquery.min.js"></script>
+    <script>
+        	var win      = $(window),
+    fxel     = $('nav'),
+    eloffset = fxel.offset().top;
+
+	win.scroll(function() {
+    if (eloffset < win.scrollTop()) {
+        fxel.addClass("fixed");
+    } else {
+        fxel.removeClass("fixed");
+    }
+	});   
+    </script>
+</body>
+</html>
